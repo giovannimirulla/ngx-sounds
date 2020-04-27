@@ -1,12 +1,7 @@
 import { NgModule } from '@angular/core';
-import { NgxSoundsComponent } from './ngx-sounds.component';
-
-
+import { SoundsService } from './ngx-sounds.service';
 
 @NgModule({
-  declarations: [NgxSoundsComponent],
-  imports: [
-  ],
-  exports: [NgxSoundsComponent]
+  providers: [SoundsService]
 })
 export class NgxSoundsModule { }

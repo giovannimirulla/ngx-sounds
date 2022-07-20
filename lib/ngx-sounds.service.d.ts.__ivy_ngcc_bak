@@ -1,0 +1,8 @@
+export declare class SoundsService {
+    howler: HowlerGlobal;
+    set volume(value: number);
+    get volume(): number;
+    mute(value?: boolean): void;
+    howl(options: IHowlProperties): Howl;
+    play(src: string): import("rxjs").Observable<unknown>;
+}

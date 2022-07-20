@@ -1,52 +1,35 @@
 {
   "name": "ngx-sounds",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d3v0ps/ngx-sounds"
+  },
+  "homepage": "https://d3v0ps.github.io/ngx-sounds",
+  "peerDependencies": {
+    "@angular/common": "^9.1.3",
+    "@angular/core": "^9.1.3",
+    "tslib": "^1.10.0"
+  },
+  "main": "bundles/ngx-sounds.umd.js",
+  "module": "fesm5/ngx-sounds.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-sounds.js",
+  "es2015": "fesm2015/ngx-sounds.js",
+  "esm5": "esm5/ngx-sounds.js",
+  "esm2015": "esm2015/ngx-sounds.js",
+  "fesm5": "fesm5/ngx-sounds.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-sounds.js",
+  "fesm2015": "fesm2015/ngx-sounds.js",
+  "typings": "ngx-sounds.d.ts",
+  "metadata": "ngx-sounds.metadata.json",
+  "sideEffects": false,
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "14.0.5",
+    "fesm2015": "14.0.5",
+    "typings": "14.0.5"
+  },
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build-lib": "ng build ngx-sounds"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "~9.1.1",
-    "@angular/common": "~9.1.1",
-    "@angular/compiler": "~9.1.1",
-    "@angular/core": "~9.1.1",
-    "@angular/forms": "~9.1.1",
-    "@angular/platform-browser": "~9.1.1",
-    "@angular/platform-browser-dynamic": "~9.1.1",
-    "@angular/router": "~9.1.1",
-    "@types/howler": "^2.1.2",
-    "howler": "^2.1.3",
-    "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.3",
-    "@angular-devkit/build-ng-packagr": "~0.901.3",
-    "@angular/cli": "~9.1.1",
-    "@angular/compiler-cli": "~9.1.1",
-    "@angular/language-service": "~9.1.1",
-    "@types/node": "^12.11.1",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~6.3.14",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~2.1.0",
-    "karma-jasmine": "~3.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
-    "ng-packagr": "^10.1.1",
-    "protractor": "~5.4.3",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
   }
 }

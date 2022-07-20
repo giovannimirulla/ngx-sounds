@@ -1,0 +1,6 @@
+/*
+ * Public API Surface of ngx-sounds
+ */
+export * from './lib/ngx-sounds.service';
+export * from './lib/ngx-sounds.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25neC1zb3VuZHMvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYywwQkFBMEIsQ0FBQztBQUN6QyxjQUFjLHlCQUF5QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBuZ3gtc291bmRzXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LXNvdW5kcy5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC1zb3VuZHMubW9kdWxlJztcbiJdfQ==

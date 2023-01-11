@@ -24,10 +24,11 @@ var SoundsService = /** @class */ (function () {
     SoundsService.prototype.howl = function (options) {
         return new Howl(options);
     };
-    SoundsService.prototype.play = function (src) {
+    SoundsService.prototype.play = function (src, autoplay = true, loop = false) {
         var sound = new Howl({
             src: [src],
-            autoplay: true
+            autoplay: autoplay, 
+            loop: loop
         });
         return fromEvent(sound, 'end');
     };

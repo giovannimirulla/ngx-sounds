@@ -18,10 +18,11 @@ let SoundsService = class SoundsService {
     howl(options) {
         return new Howl(options);
     }
-    play(src) {
+    play(src, autoplay = true, loop = false) {
         const sound = new Howl({
             src: [src],
-            autoplay: true
+            autoplay: autoplay,
+            loop: loop
         });
         return fromEvent(sound, 'end');
     }

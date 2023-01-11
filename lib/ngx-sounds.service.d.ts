@@ -6,7 +6,7 @@ export declare class SoundsService {
     get volume(): number;
     mute(value?: boolean): void;
     howl(options: any): Howl;
-    play(src: string): import("rxjs").Observable<unknown>;
+    play(src:string, autoplay?:boolean, loop?:boolean): import("rxjs").Observable<unknown>;
     static ɵfac: ɵngcc0.ɵɵFactoryDeclaration<SoundsService, never>;
     static ɵprov: ɵngcc0.ɵɵInjectableDeclaration<SoundsService>;
 }

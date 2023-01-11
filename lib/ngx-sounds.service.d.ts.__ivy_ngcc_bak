@@ -4,5 +4,5 @@ export declare class SoundsService {
     get volume(): number;
     mute(value?: boolean): void;
     howl(options: IHowlProperties): Howl;
-    play(src: string): import("rxjs").Observable<unknown>;
+    play(src: string, autoplay?:boolean, loop?:boolean): import("rxjs").Observable<unknown>;
 }

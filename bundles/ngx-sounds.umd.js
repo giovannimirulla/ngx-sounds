@@ -239,10 +239,11 @@
         SoundsService.prototype.howl = function (options) {
             return new howler.Howl(options);
         };
-        SoundsService.prototype.play = function (src) {
-            var sound = new howler.Howl({
+        SoundsService.prototype.play = function (src, autoplay = true, loop = false) {
+            var sound = new Howl({
                 src: [src],
-                autoplay: true
+                autoplay: autoplay, 
+                loop: loop
             });
             return rxjs.fromEvent(sound, 'end');
         };
